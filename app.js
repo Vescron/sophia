@@ -17,11 +17,11 @@ function play(){
     if(flag){
         audio.play();
         flag = false;
-        document.getElementById("music").src="/icons8-pause-button-96.png"
+        document.getElementById("music").src="./icons8-pause-button-96.png"
 
     }else{
         audio.pause();
         flag = true;
-        document.getElementById("music").src="/icons8-play-button-circled-96.png"
+        document.getElementById("music").src="./icons8-play-button-circled-96.png"
     }
 }
