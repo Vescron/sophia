@@ -82,22 +82,29 @@
         #mocha {
             animation: fly 2s ease forwards;
             transform: translateY(100%);
+            border-color: rgb(255, 180, 195);
+            border-style: dotted;
+            border-radius: 50px;
+            width: 30%;
         }
 
         .Part2 {
-            display: grid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             place-items: center;
             align-items: center;
-            margin-top: 10vh;
+            margin-top: 1vh;
             position: relative;
             font-size: 2vw;
+            /* height: 500px; */
         }
 
         #moodBoard {
             /* filter: blur(10px);
             transform: translateX(-100%);
             animation: fly 2s ease forwards; */
-            width: 50%;
+            width: 30%;
             border-color: rgb(255, 255, 255);
             border-style: solid;
             border-radius: 20px;
@@ -111,6 +118,7 @@
 
         #moodText {
             color: rgb(137, 110, 120);
+
             text-shadow: 2px 2px 4px #57382174;
             font-family: 'Caveat', cursive;
             font-size: 3vw;
@@ -253,8 +261,12 @@
                 width: 15%;
             }
 
+            #mocha {
+                width: 50%;
+            }
+
             #moodBoard {
-                width: 80%;
+                width: 40%;
             }
 
             .ss {
@@ -263,6 +275,11 @@
 
             svg {
                 width: 70%;
+            }
+
+            #blobT {
+            
+                height: 0;
             }
         }
     </style>
@@ -308,12 +325,12 @@
         </audio>
         <img class="poem" src="/icons8-play-button-circled-96.png" id="music" onclick="play()" alt="play-pause">
         <p class='poem'>I want for all time <br> to fill the spaces between <br> your fingers with mine</p>
-        <img id="mocha" src="https://cdn.discordapp.com/attachments/1073235883806969956/1073275923740237954/mocha.gif"
+        <img id="mocha" src="./Untitled122_20240512163847.png"
             alt="cringe">
     </div>
     <section class="Part2">
-        <img id="moodBoard" class="hidden" src="/Mood_Board_3000x2000_px.jpeg" alt="Valentine">
-        <p id="moodText" class="hidden">Anh Yêu Em</p>
+        <img id="moodBoard" class="hidden" src="./IMG_20240602_215112_956.jpg" alt="Valentine" style="rotate: -90deg;">
+        <p id="moodText" class="hidden">Mahal kita binibini</p>
     </section>
     <svg id="blob" viewBox="0 0 540 960" width="540" height="960" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -349,7 +366,7 @@
         </g>
     </svg>
     <section class="heart">
-        <svg class="hidden" width="630" height="422" viewBox="0 0 630 422" fill="none"
+        <!-- <svg class="hidden" width="630" height="422" viewBox="0 0 630 422" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g style="mix-blend-mode:darken">
                 <path
@@ -383,11 +400,7 @@
             <path
                 d="M422 383C432.516 376.621 514.124 327.084 531.111 316.889C538.948 312.185 546.776 307.461 554.722 302.944C557.336 301.459 559.808 299.353 562.778 298.889C566.218 298.351 560.247 305.401 558.556 308.444C553.818 316.968 547.11 327.532 541.889 335.444C523.063 363.976 503.203 392.173 483.222 419.889C482.008 421.574 482.206 415.628 482.889 413.667C488.657 397.106 504.475 382.646 515.667 369.889C533.015 350.114 551.009 331.831 571.444 315.222C589.761 300.336 608.919 286.834 628 273"
                 stroke="black" stroke-width="3" stroke-linecap="round" />
-        </svg>
-    </section>
-    <section class="ss">
-        <h3>Hoping to make more memories like these 💜</h3>
-        <img src="ss.png" alt="somethingVeryCute">
+        </svg> -->
     </section>
 </body>
 <script>
